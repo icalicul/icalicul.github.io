@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="text.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Hello, world!</title>
+  </head>
+  <body style="font-family: 'Poppins'; background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ">
+  <div class="container">
+      <div class="container mx-auto text-center pt-3">
+          <br>
+          <button onclick="typeWriter()" class="button btn" style="background-color: #84a1ad;">Click me dong baby</button>
+        </div>
+        <br>
+        <div class="container p-3">
+            <p id="demo" style="color: white;"></p>
+        </div>
+  </div>
+
+
+
+    <script>
+    var i = 0;
+    var txt = 'Hai Merlita Fitriani sayangkuuu, my gorgeous, my pretty, my strong woman, my lovely hihi ❤️. Sayangku, semangat terus ya cantik, thank you ya baby. Thank you for attention you gave to me, thank you for the time you spent with me, thanks for being there through ups and downs, thank you for loving me ❤️. Kayak yang aku omongin tadi by, ayok kita ke titik yang lebih baik dari sekarang, ke titik dimana ga semenyedihkan ini wkwkwk, ke titik dimana kita bisa lebih menikmati hidup, Bismillah kita pasti bakalan ke sana sayang, ga bakalan stuck disini buat waktu yang lama, i will keep working hard for that. You know I love you so much baby, and I know you love me too ❤️ Goodnight ya ayangg, tomorrow will be better day than today, Bismillah. Maap ya ini sederhana banget bentar doang ini bikinnya, kapan kapan aku bikinin yang lebih bagus ya sayangkuu hihi ❤️. Oiya babyyy, thank you buat wafer sama suratnya tadi sore, it means a lot to me, I love you banyak banyak banyak hihihi ❤️❤️❤️❤️❤️❤️';
+    var speed = 80;
+
+    function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+    }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
